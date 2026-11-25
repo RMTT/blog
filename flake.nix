@@ -18,11 +18,13 @@
             git
             python3
             python3Packages.cloudflare
+            wrangler
           ];
 
           shellHook = ''
             echo "Hugo development environment loaded."
             echo "Hugo version: $(hugo version)"
+            echo "Wrangler version: $(wrangler --version)"
             echo "Python environment loaded (with latest cloudflare SDK from PyPI)."
           '';
         };
