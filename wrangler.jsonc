@@ -2,6 +2,9 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "blog",
   "compatibility_date": "2026-10-30",
+  "build": {
+    "command": "hugo --gc --minify"
+  },
   "observability": {
     "enabled": true
   },
